@@ -1,0 +1,31 @@
+{
+  "name": "ignitekit/wp-validation",
+  "description": "Laravel inspired validation package for WordPress",
+  "license": "MIT",
+  "authors": [
+    {
+      "email": "dg@darkog.com",
+      "name": "Darko Gjorgjijoski"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "IgniteKit\\WP\\Validation\\": "src"
+    }
+  },
+  "require": {
+    "php": ">=7.0",
+    "ignitekit/validation" : "*",
+    "ext-mbstring": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.0",
+    "squizlabs/php_codesniffer": "^3"
+  },
+  "scripts": {
+    "test": [
+      "phpunit",
+      "phpcs"
+    ]
+  }
+}
